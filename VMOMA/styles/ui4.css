@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+/**********************HOME/INDEX PAGE***********************/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Permanent Marker', cursive;
+}
+#vanta-canvas{
+    width:100%;
+    height: 100%;
+    z-index: 999;
+}
+
+.carousel,  img{
+    border-radius: 20px;
+}
+
+.carousel-inner{
+    border-radius: 20px;
+}
+
+.carousel-item{
+    height: 80vh;
+}
+
+p{
+    color: white;
+}
+
+h5{
+    color: white;
+}
+
+#return{
+    text-align: center; 
+    padding: 40px;
+}
+
+/**********************EXHIBIT1***********************/
+
+#exhibit1-header{
+    color: #ff4646;
+    text-align: center; 
+    padding-bottom: 20px;
+}
+
+#return-tag-1{
+   color: #ff4646; 
+   text-decoration: none;
+}
+/**********************EXHIBIT2***********************/
+
+#exhibit2-header{
+   color: yellow; 
+   text-align: center; 
+   padding-bottom: 20px;
+}
+
+#return-tag-2{
+    color: yellow; 
+    text-decoration: none;
+ }
+
+/**********************EXHIBIT3***********************/
+
+#exhibit3-header{
+    color: lightgreen; 
+    text-align: center; 
+    padding-bottom: 20px;
+ }
+ 
+ #return-tag-3{
+     color: lightgreen; 
+     text-decoration: none;
+  }
+
+/**********************EXHIBIT4***********************/
+
+#exhibit4-header{
+    color: lightblue; 
+    text-align: center; 
+    padding-bottom: 20px;
+ }
+ 
+ #return-tag-4{
+     color: lightblue; 
+     text-decoration: none;
+  }

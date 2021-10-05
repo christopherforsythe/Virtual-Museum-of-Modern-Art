@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+/**********************HOME/INDEX PAGE***********************/
+body,
+html {
+  background-color: black;
+  color: white;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: "Playfair Display", serif;
+  overflow-x: hidden;
+}
+
+/*NAV BAR*/
+nav h1{
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+nav .col-md-3{
+    padding-bottom: 0px;
+}
+
+nav .col-md-4{
+    padding-bottom: 0px;
+}
+
+nav a{
+    color: white;
+}
+
+nav li{
+    list-style: none;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+nav{
+    text-align: center;
+    padding: 0px;
+    background-color: white;
+}
+
+#navbarToggleExternalContent a{
+    text-decoration: none;
+    color: white;
+    font-size: 19px;
+}
+
+#navbarToggleExternalContent ul{
+    list-style: none;
+    padding: 0px;
+}
+
+#navbarToggleExternalContent li{
+    display: inline;
+    padding-right: 25px;   
+}
+
+#navbarToggleExternalContent{
+    background-color: black;
+    color: white;
+}
+
+.container h2{
+    color: white;
+    font-size: 3.5em;
+    font-weight: bold;
+    margin-top: 20px;
+    line-height: 0.8em;
+}
+
+.container a{
+    text-decoration: none;
+    color: white;
+}
+
+.toprow{
+    padding-bottom: 0px;
+}
+
+.container p{
+    color: white;
+    line-height: 1.25em;
+}
+
+.container .col-md-1{
+    padding: 0px;
+}
+footer{
+    background-color: black;
+    text-align: center;
+    padding: 15px;
+    color: white;
+}
+
+footer h3{
+    margin-left: 15px;
+    font-size: 2em;
+}
+footer ul{
+    list-style: none;
+    padding: 0;
+    margin-left: 15px;
+    font-size: 1.75em;
+  }
+  
+  footer li{
+    display: inline;
+
+  }
+  
+  footer a{
+    color: white;
+    text-decoration: none;
+    padding-right: 20px;
+  }
+
+
+  /***************************EXHIBITIONS PAGE**************************/
+
+@media (min-width: 885px){
+   
+    #exhibitiondisplay .row .col-md-8{
+        padding: 0px;
+        overflow: hidden;
+    }
+
+}

@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+body,
+html {
+  background-color: #fff;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+}
+
+header a{
+    text-decoration: none;
+    color: black;
+}
+
+main {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.aside-section {
+  top: 0;
+  bottom: 0;
+  position: absolute;
+}
+
+.aside-left {
+  display: none;
+  width: 40%;
+  left: 0;
+  background-color: #ff5964;
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  transform: translateY(-100%);
+  transition: transform 0.4s ease-in-out;
+}
+
+.aside-right {
+  width: 100%;
+  right: 0;
+  background-color: #38618c;
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -o-transform: translateX(100%);
+  transform: translateX(100%);
+  transition: transform 0.4s ease-in-out;
+}
+
+.aside-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 150px;
+  text-align: left;
+  padding-left: 50px;
+}
+
+.aside-content {
+  margin-top: 150px;
+  padding: 0 40px;
+  position: relative;
+  color: white;
+  text-align: center;
+}
+
+.aside-list li {
+  margin-bottom: 20px;
+}
+
+.aside-anchor::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  background-color: #ff5964;
+  left: 0;
+  right: 0;
+  height: 3px;
+  border-radius: 3px;
+}
+
+.aside-anchor::before {
+  border-radius: 3px;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  background-color: #fff;
+  left: 0;
+  height: 3px;
+  z-index: 1;
+  width: 50%;
+  -webkit-transition: transform 0.2s ease-in-out;
+  -o-transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+}
+
+.aside-anchor:hover:before {
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -o-transform: translateX(100%);
+  transform: translateX(100%);
+}
+
+.aside-anchor {
+  padding-bottom: 7px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 30px;
+  position: relative;
+  font-weight: 500;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]:checked ~ aside .aside-left {
+  transform: translateY(0%);
+}
+
+input[type="checkbox"]:checked ~ aside .aside-right {
+  transform: translateX(0%);
+}
+
+input[type="checkbox"]:checked ~ label .bar {
+  background-color: #fff;
+}
+
+input[type="checkbox"]:checked ~ label .top {
+  -webkit-transform: translateY(0px) rotateZ(45deg);
+  -moz-transform: translateY(0px) rotateZ(45deg);
+  -ms-transform: translateY(0px) rotateZ(45deg);
+  -o-transform: translateY(0px) rotateZ(45deg);
+  transform: translateY(0px) rotateZ(45deg);
+}
+
+input[type="checkbox"]:checked ~ label .bottom {
+  -webkit-transform: translateY(-15px) rotateZ(-45deg);
+  -moz-transform: translateY(-15px) rotateZ(-45deg);
+  -ms-transform: translateY(-15px) rotateZ(-45deg);
+  -o-transform: translateY(-15px) rotateZ(-45deg);
+  transform: translateY(-15px) rotateZ(-45deg);
+}
+
+input[type="checkbox"]:checked ~ label .middle {
+  width: 0;
+}
+
+.middle {
+  margin: 0 auto;
+}
+
+label {
+  top: 10px;
+  display: inline-block;
+  padding: 7px 10px;
+  background-color: transparent;
+  cursor: pointer;
+  margin: 10px;
+  z-index: 3;
+  position: fixed;
+}
+
+.bar {
+  display: block;
+  background-color: black;
+  width: 30px;
+  height: 3px;
+  border-radius: 5px;
+  margin: 5px auto;
+  transition: background-color 0.4s ease-in, transform 0.4s ease-in,
+    width 0.4s ease-in;
+}
+
+h1 {
+  margin: 0;
+  position: relative;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  text-align: center;
+  font-size: 30px;
+}
+
+h1 span {
+  font-size: 20px;
+  display: block;
+}
+
+p {
+  font-size: 30px;
+}
+
+.button {
+  display: inline-block;
+  background-image: none;
+  border: none;
+  background-color: transparent;
+  padding-bottom: 7px;
+  position: relative;
+  cursor: pointer;
+  font-size: 20px;
+  color: white;
+  padding: 7px 50px;
+  border: 2px solid white;
+}
+
+#mainh1{
+    font-size: 4rem;
+}
+
+
+#landingmainpic{
+    height: 100%;
+    width: 100%;
+}
+
+.landingtext{
+    position: relative;
+    top: 200px;
+    left: 0px;
+    color: white;
+    background-color: black;
+    margin-left: 20px;
+}
+
+.landingmain{
+    border: thin solid blue;
+}
+.secondrow{
+    overflow: hidden;
+    border: thin solid red;
+}
+
+#indexfooter{
+    border: thin solid green;
+}
+
+
+
+#showcase{
+    background-image: url(https://www.gannett-cdn.com/presto/2019/10/16/USAT/59b783f2-6ad9-4047-bed5-461d94541ff0-moma_renovation_preview22.jpg?crop=7359,4139,x1,y733&width=3200&height=1800&format=pjpg&auto=webp);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100vh;
+    background-position: 0px - 1000px;
+    color: white;
+    border: solid thin blue;
+    overflow: hidden;
+}
+
+#showcase, #showcase2, #showcase3, h2{
+    font-size: 1.3em;
+}
+
+#showcase, #showcase2, #showcase3, p{
+    font-size: 1.1em;
+}
+
+
+#showcase .col-4{
+    background-color: black;
+    margin-top: 300px;
+    margin-left: 90px;
+    width: 200px;
+    padding: 10px;
+    border: solid thin red;
+}
+
+#showcase2 {
+    background-image: url(https://www.moma.org/d/assets/W1siZiIsIjIwMTYvMTAvMDMvN29pZmIwcmExel9JTjAwODJfMDA3X3Bvc3RfYXMuanBnIl0sWyJwIiwiY29udmVydCIsIi1xdWFsaXR5IDkwIC1yZXNpemUgMjAwMHgyMDAwXHUwMDNlIl1d/IN0082_007_post_as.jpg?sha=c27f3a7db32c8257);
+    background-repeat: no-repeat;
+    background-position: 0px - 1000px;
+    background-size: 100%;
+    height: 100vh;
+    color: white;
+    border: solid thin blue;
+    overflow: hidden;
+
+}
+
+#showcase2 .col-4{
+    background-color: black;
+    margin-top: 250px;
+    margin-left: 90px;
+    width: 200px;
+    padding: 10px;
+    border: solid thin red;
+    width: 300px;
+}
+
+#showcase3 .col-8{
+    border: thin solid red;
+    margin: auto;
+    height: 300px;
+    background-color: lightsalmon;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+#showcase3 a{
+  color: black;
+}
+
+.righty, img{
+    margin: auto;
+}
+
+#landergif{
+    height: 100%;
+    width: 95%;
+}
+
+
+footer{
+    background-color: lightsalmon;
+}
+
+footer .col-6{
+  border: thin black solid;
+}
+
+footer ul{
+  list-style: none;
+  padding: 0;
+}
+
+footer li{
+  display: inline;
+}
+
+footer a{
+  color: black;
+  text-decoration: none;
+  padding-right: 20px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+@media (min-width: 992px) {
+  h1 {
+    font-size: 40px;
+  }
+  .aside-left {
+    display: block;
+  }
+
+  .aside-right {
+    width: 60%;
+  }
+}
+
+    
